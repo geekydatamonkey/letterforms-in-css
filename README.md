@@ -17,8 +17,14 @@ You can view project on [http://localhost:8000]. It will live reload.
 
 ...
 
+## Credits
+
+- Jasio Stefanski: CSS, HTML, Typography
+- James Johnson: JS
+
 ## Tech Stack
 
 - [Yeoman](http://yeoman.io/) with [Generator-React-Webpack](https://github.com/newtriks/generator-react-webpack) for kicking off the project.
 - [ReactJS](https://github.com/reactjs)
 - [Webpack](https://webpack.github.io/)
+
