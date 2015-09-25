@@ -9,7 +9,7 @@ const App = React.createClass({
 
   getInitialState() {
     return {
-      inputText: '',
+      inputText: 'Hey Jasio',
     };
   },
 
