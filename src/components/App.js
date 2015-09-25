@@ -2,21 +2,34 @@ require('normalize.css');
 require('styles/App.css');
 
 import React from 'react/addons';
-import Letter from './Letter';
+import Input from './Input';
+import Output from './Output';
 
-class AppComponent extends React.Component {
+const App = React.createClass({
+
+  getInitialState() {
+    return {
+      inputText: '',
+    };
+  },
+
+  setInputText(str = '') {
+    this.setState({
+      inputText: str,
+    });
+  },
+
   render() {
     return (
       <div className="app-container">
-        <Letter char="A" />
-        <Letter char="B" />
-        <Letter char="C" />
+        <Input
+          text={this.state.inputText}
+          handleInputChange={this.setInputText} />
+        <Output text={this.state.inputText} />
       </div>
     );
-  }
-}
+  },
 
-AppComponent.defaultProps = {
-};
+});
 
-export default AppComponent;
+export default App;

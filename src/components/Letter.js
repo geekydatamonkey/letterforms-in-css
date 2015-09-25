@@ -7,12 +7,26 @@ const Letter = React.createClass({
     char: React.PropTypes.string.isRequired,
   },
 
+  getCharClasses() {
+    const char = this.props.char.toUpperCase();
+    return charClasses[char];
+  },
+
   getWrapperClassNames() {
-    return charClasses[this.props.char].wrapper;
+    const classes = this.getCharClasses();
+    if (!classes) {
+      console.warn(`no style information for character '${this.props.char}'`);
+      return '';
+    }
+    return this.getCharClasses().wrapper;
   },
 
   getInnerClassNames() {
-    return charClasses[this.props.char].inner;
+    const classes = this.getCharClasses();
+    if (! classes) {
+      return [];
+    }
+    return this.getCharClasses().inner;
   },
 
   renderInner() {
