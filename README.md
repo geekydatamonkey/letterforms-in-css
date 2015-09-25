@@ -13,16 +13,23 @@ This project is an experiment in creating letterforms using only HTML and CSS â€
 
 You can view project on [http://localhost:8000]. It will live reload.
 
-### Production
+### Build for production
 
-...
+1. To build: `npm run dist`
+2. The `dist` folder now contains a production-ready version. Deploy to server as you wish.
+3. To locally serve the production build: `npm run serve:dist`
+
+### Publish to GH pages
+
+1. `npm install gh-pages -g`
+2. `npm run deploy`
 
 ## Credits
 
 - Jasio Stefanski: CSS, HTML, Typography
 - James Johnson: JS
 
-## Tech Stack
+## Some Tech Stack Stuff
 
 - [Yeoman](http://yeoman.io/) with [Generator-React-Webpack](https://github.com/newtriks/generator-react-webpack) for kicking off the project.
 - [ReactJS](https://github.com/reactjs)

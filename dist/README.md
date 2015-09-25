@@ -1,4 +1,2 @@
 # Letterforms in CSS
 
-
-
