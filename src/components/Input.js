@@ -1,3 +1,4 @@
+require('styles/main-input.scss');
 
 import React from 'react';
 
@@ -15,11 +16,14 @@ const Input = React.createClass({
 
   render() {
     return (
-      <input
-        ref="textInput"
-        type="text"
-        value={this.props.text}
-        onChange={this.handleChange} />
+      <div className="main-input">
+        <input
+          ref="textInput"
+          type="text"
+          value={this.props.text}
+          placeholder="type something..."
+          onChange={this.handleChange} />
+      </div>
     );
   },
 });
