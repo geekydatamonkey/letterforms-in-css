@@ -1,23 +1,39 @@
-
 import React from 'react';
-import classNames from 'classnames';
+import charClasses from './charClasses';
 
-class Letter extends React.Component {
-  getClassNames() {
-    return classNames({
-      'letterform': true,
-      'metrics_cont': true,
-      'Y': true,
+const Letter = React.createClass({
+
+  propTypes: {
+    char: React.PropTypes.string.isRequired,
+  },
+
+  getWrapperClassNames() {
+    return charClasses[this.props.char].wrapper;
+  },
+
+  getInnerClassNames() {
+    return charClasses[this.props.char].inner;
+  },
+
+  renderInner() {
+    // need one div for each inner class
+    const innerClasses = this.getInnerClassNames();
+    return innerClasses.map((classNames, idx) => {
+      return (
+        <div key={idx} className={ classNames }/>
+      );
     });
-  }
+  },
 
   render() {
     return (
-      <span className={this.getClassNames()}>
-        A
+      <span className="letterform">
+        <div className={ this.getWrapperClassNames() } >
+          { this.renderInner() }
+        </div>
       </span>
     );
-  }
-}
+  },
+});
 
 export default Letter;

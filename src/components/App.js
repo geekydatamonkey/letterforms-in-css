@@ -8,7 +8,9 @@ class AppComponent extends React.Component {
   render() {
     return (
       <div className="app-container">
-        <Letter />
+        <Letter char="A" />
+        <Letter char="B" />
+        <Letter char="C" />
       </div>
     );
   }
