@@ -5,11 +5,14 @@ This project is an experiment in creating letterforms using only HTML and CSS â€
 
 ## Setup
 
+You will need to have [NodeJS](https://nodejs.org/en/) installed. I recommend using [NVM](https://github.com/creationix/nvm)  to setup node, rather than the nodejs install (this way, you can avoid typing `sudo`).
+
 ### Development
 
 1. `git clone https://github.com/geekydatamonkey/letterforms-in-css.git`
-2. `npm install`
-3. `npm start`
+2. `cd letterforms-in-css`
+3. `npm install`
+4. `npm start`
 
 You can view project on [http://localhost:8000]. It will live reload.
 
