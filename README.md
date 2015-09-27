@@ -5,7 +5,15 @@ This project is an experiment in creating letterforms using only HTML and CSS â€
 
 ## Setup
 
-You will need to have [NodeJS](https://nodejs.org/en/) installed. I recommend using [NVM](https://github.com/creationix/nvm)  to setup node, rather than the nodejs install (this way, you can avoid typing `sudo`).
+### Installing NodeJS
+You will need to have [NodeJS](https://nodejs.org/en/) installed. I recommend using [NVM](https://github.com/creationix/nvm)  to setup node, rather than the nodejs install (this way, you can avoid typing `sudo`):
+
+1. `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.27.0/install.sh | bash` will install NVM (node version manager), which will allow you to download and install different versions of NodeJS and iojs.
+
+2. `nvm install stable` will install the latest stable release of NodeJS.
+3. `nvm alias default stable` will set this stable release to the default.
+
+Now, if you type: `npm --version` you should see a number like `2.14.2` (or later).
 
 ### Development
 
