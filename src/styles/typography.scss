@@ -9,24 +9,26 @@ body {
   background:orange;
 }
 
-.width_one {width:185px;}
-.width_two {width:215px;}
-.width_three {width:240px;}
-.width_four {width:280px;}
-.width_five {width:270px;}
-.width_six {width:315px;}
-.width_seven {width:415px;}
-.width_eight {width:445px;}
+$default-width: 185px;
+
+.width_one {width: $default-width;}
+.width_two {width: 215/185 * $default-width;}
+.width_three {width:240/185 * $default-width; }
+.width_four {width:280/185 * $default-width; }
+.width_five {width:270/185 * $default-width;}
+.width_six {width:315/185 * $default-width;}
+.width_seven {width:415/185 * $default-width;}
+.width_eight {width:445/185 * $default-width;}
 
 .metrics_h {
-  margin-top:20px;
-  margin-bottom:20px;
+  margin-top:20/185 * $default-width;
+  margin-bottom:20/185 * $default-width;
   //float:left;
   display: inline-block;
   position:relative;
-  height:400px; 
-  margin-left:10px;
-  margin-right:10px;
+  height:400/185 * $default-width; 
+  margin-left:10/185 * $default-width;
+  margin-right:10/185 * $default-width;
   /*background: url(img/fut_B.jpg);*/
 }
 
