@@ -1,6 +1,7 @@
 require('normalize.css');
 require('styles/app.scss');
-require('styles/typography.css');
+require('styles/typography.scss');
+require('styles/kerning.scss');
 
 import React from 'react/addons';
 import Input from './Input';

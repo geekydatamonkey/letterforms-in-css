@@ -39,9 +39,13 @@ const Letter = React.createClass({
     });
   },
 
+  getLetterClass() {
+    return 'letterform letter-' + this.props.char;
+  },
+
   render() {
     return (
-      <span className="letterform">
+      <span className={this.getLetterClass() }>
         <div className={ this.getWrapperClassNames() } >
           { this.renderInner() }
         </div>

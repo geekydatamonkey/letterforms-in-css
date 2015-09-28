@@ -21,7 +21,8 @@ body {
 .metrics_h {
   margin-top:20px;
   margin-bottom:20px;
-  float:left;
+  //float:left;
+  display: inline-block;
   position:relative;
   height:400px; 
   margin-left:10px;
