@@ -6,19 +6,19 @@
 /* basic rules */
 
 body {
-/*  background:orange;*/
+  background:#FFF;
 }
 
-.est {width:185px;}
-.low {width:215px;}
-.mid {width:240px;}
-.way{width:280px;}
-.med{width:270px;}
-.Y {width:315px;}
-.full {width:415px;}
-.full_ex {width:445px;}
+.width_one {width:185px;}
+.width_two {width:215px;}
+.width_three {width:240px;}
+.width_four {width:280px;}
+.width_five {width:270px;}
+.width_six {width:315px;}
+.width_seven {width:415px;}
+.width_eight {width:445px;}
 
-.metrics_cont {
+.metrics_h {
   margin-top:20px;
   margin-bottom:20px;
   float:left;
@@ -73,7 +73,7 @@ body {
 .over-x {
 overflow-x:hidden;
 }
-.over-y {
+.auto-y {
 overflow:hidden;
 }
 
@@ -1068,3 +1068,105 @@ overflow:hidden;
   left:21%;
   bottom:0;
 }
+
+/* Period */
+
+.PER {
+  position:absolute;
+  height:31%;
+  width:39%;
+  border-radius:50%;
+  margin-left:-1.5%;
+  bottom:-2%;
+}
+
+/* Exclamation Point */
+
+.EXC {
+  position:absolute;
+  height:68%;
+  width:57%;
+  z-index:9999;
+  left:21%;
+  top:-4%;
+}
+
+.EXC::after {
+  content: " ";
+  position:absolute;
+  height:46.5%;
+  width:119%;
+  background:#000;
+  border-radius:50%;
+  margin-left:-7%;
+  bottom:-56%;
+}
+
+/*Question Mark */
+
+.QUE {
+  position:absolute;
+  height:55%;
+  width:100%;
+  -webkit-border-radius: 45%/100% 100% 100% 100%;
+  -moz-border-radius: 45%/100% 0% 100% 0%;
+  border-radius: 100%/100% 100% 90% 90%;
+  margin-left:0;
+  top:-4%;
+}
+
+.QUE::after {
+  content: " ";
+  position:absolute;
+  height:35%;
+  width:20%;
+  background:#FFF;
+  border-radius: 100%/100% 100% 100% 0%;
+  margin-left:39%;
+  top:38%;
+}
+
+.QUE::before {
+  content: " ";
+  position:absolute;
+  height:70%;
+  width:49%;
+  background:#fff;
+  border-radius: 20%/0% 120% 0% 0%;
+  transform: rotate(5deg);
+  margin-left:-4%;
+  top:49%;
+}
+
+.QUE_II {
+  position:absolute;
+  height:31%;
+  width:52%;
+  border-radius:50%;
+  margin-left:20%;
+  bottom:-2%;
+}
+
+.QUE_II::after {
+  content: " ";
+  position:absolute;
+  height:100%;
+  width:78%;
+  background:#000;
+  margin-left:14%;
+  top:-122.5%;
+}
+
+.QUE_II::before {
+  content: " ";
+  position:absolute;
+  height:35%;
+  width:80%;
+  background:#fff;
+  border-radius: 100%/100% 100% 100% 100%;
+  transform: rotate(0deg);
+  margin-left:-9%;
+  top:-143.5%;
+  z-index:9999;
+}
+
