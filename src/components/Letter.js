@@ -40,7 +40,7 @@ const Letter = React.createClass({
   },
 
   getLetterClass() {
-    return 'letterform letter-' + this.props.char;
+    return 'letterform letter-' + this.props.char.toUpperCase();
   },
 
   render() {
