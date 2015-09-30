@@ -5,11 +5,7 @@
 
 /* basic rules */
 
-body {
-  background:orange;
-}
-
-$default-width: 185px;
+$default-width: 5em;
 
 .width_one {width: $default-width;}
 .width_two {width: 215/185 * $default-width;}

@@ -11,7 +11,7 @@ const App = React.createClass({
 
   getInitialState() {
     return {
-      inputText: 'Hey Jasio',
+      inputText: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ!?.',
     };
   },
 
