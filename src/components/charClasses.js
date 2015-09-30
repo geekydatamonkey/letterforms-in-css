@@ -135,19 +135,20 @@ export default {
       'PER third_stroke color',
     ],
   },
-   '!': {
+  '!': {
     wrapper: 'metrics_h width_one',
     inner: [
       'EXC third_stroke color',
     ],
   },
-   '?': {
+  '?': {
     wrapper: 'metrics_h width_three',
     inner: [
       'QUE third_stroke color',
       'QUE_II color',
     ],
-  },  ' ': {
+  },
+  ' ': {
     wrapper: 'metrics_h width_one',
     inner: [],
   },

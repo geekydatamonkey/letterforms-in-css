@@ -18,7 +18,7 @@
     "release:minor": "npm version minor && git push --follow-tags",
     "release:patch": "npm version patch && git push --follow-tags",
     "deploy": "gh-pages -d dist",
-    "yolo": "npm run lint && npm run dist && git push && npm run"
+    "yolo": "npm run lint && npm run dist && git push && npm run deploy"
   },
   "repository": "",
   "keywords": [],
